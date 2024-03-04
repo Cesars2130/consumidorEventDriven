@@ -18,7 +18,8 @@ const initBroker = async () => {
               headers,
               body: datos,
             };
-            const response = await fetch("http://localhost:8000/pago/", datos2);
+
+            const response = await fetch("http://44.194.161.211/pago/", datos2);
             if (!response.ok) {
               throw new Error(`Fetch error: ${response.status}`);
             }
